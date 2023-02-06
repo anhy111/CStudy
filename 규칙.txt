@@ -1,0 +1,3 @@
+컴파일 명령어
+clang-cl -std=c89 -W -Wall -pedantic-errors /Fobin\main.exe main.c
+clang c89표준 /Fo : 디렉토리/출력파일이름
