@@ -2,12 +2,14 @@
 
 int get_length(const char* str){
 	
-	char* ptr = str;
-	while(*ptr != '\0'){
-		ptr++;
+	size_t count = 0;
+	const char* ptr = str;
+	
+	while(*ptr++ != '\0'){
+		++count;
 	}
 	
-	return ptr - str;
+	return count;
 }
 
 int main(void)
