@@ -1,24 +1,24 @@
 #include <stdio.h>
 
-int get_length(const char* str){
-	
+get_string_length(const char* str)
+{
 	size_t count = 0;
 	const char* ptr = str;
-	
 	while(*ptr++ != '\0'){
 		++count;
 	}
 	
 	return count;
+	
 }
 
 int main(void)
 {
-	int length;
 	char str[] = "POCU";
-	length = get_length(str);
+	int length = 0;
+	length = get_string_length(str);
 	
-	printf("POCU length: %d", length);
+	printf("POCU length: %d\n",length);
 	
 	return 0;
 }
