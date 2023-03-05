@@ -28,8 +28,13 @@ int main(void)
 	
 	printf("line1 length^2: %d\n", get_line_length_sq(line1));
 	
-	/* properly build rect by calling uutil func */
+	/* properly build rect by calling util func */
 	rect = build_rectangle(p0, p1);
+	printf("rect0: (%d, %d) (%d, %d)\n",
+		rect.top_left.x, rect.top_left.y,
+		rect.bottom_right.x, rect.bottom_right.y);
+	
+	rect = build_rectangle(p1, p0);
 	printf("rect1: (%d, %d) (%d, %d)\n",
 		rect.top_left.x, rect.top_left.y,
 		rect.bottom_right.x, rect.bottom_right.y);
